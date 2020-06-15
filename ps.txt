@@ -1,0 +1,8 @@
+First, I have to make it so that the play button actually works when I click the play button the game starts. 
+Then, I need to make a random number generator, and also make it appear on the page after the play button is clicked,
+and it needs to stay there for the length of the game. I also need to create something that shows the total score, and numbers need to be added onto It after clicking one of the four currencies I'm using.
+When you click something that is not on the page, It should not add to the total value.
+There also needs to be random number generators for each of the currencies between two numbers such as 3 as the lowest, and 12 as the highest.
+If I go over the targeted score, the game should instantly end, and a loss should be added to the losses counter.
+If I get the exact targeted score, the game should instantly end, and a win should be added to the wins counter.
+All of the previous numbers should be re-rolled again and have a number fill their spot, so that It's different every time even when not resetting the page.
