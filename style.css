@@ -4,3 +4,6 @@
 .display-4 {
   text-align: center;
 }
+img {
+  cursor: pointer;
+}
