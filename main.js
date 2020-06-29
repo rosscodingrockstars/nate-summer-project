@@ -14,35 +14,27 @@ function getRandomInt(min, max) {
   $("#amount-needed").text(chosenNumber);
 }
 getRandomInt(19, 120);
+let moneyOne = Math.floor(Math.random() * 12 + 1);
+let moneyTwo = Math.floor(Math.random() * 12 + 1);
+let moneyThree = Math.floor(Math.random() * 12 + 1);
+let moneyFour = Math.floor(Math.random() * 12 + 1);
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  let money1 = Math.floor(Math.random() * (max - min)) + min;
-  $("#money1").(console.log);
-}
-getRandomInt(1, 12);
+let points = 0;
+let wins = 0;
+let losses = 0;
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  let money2 = Math.floor(Math.random() * (max - min)) + min;
-  $("#money2").(console.log);
-}
-getRandomInt(1, 12);
+$("#money1").click(function() {
+  alert("money");
+});
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  let money3 = Math.floor(Math.random() * (max - min)) + min;
-  $("#money3").(console.log);
-}
-getRandomInt(1, 12);
+$("#money2").click(function() {
+  alert("money");
+});
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  let money4 = Math.floor(Math.random() * (max - min)) + min;
-  $("#money4").(console.log);
-}
-getRandomInt(1, 12);
+$("#money3").click(function() {
+  alert("money");
+});
+
+$("#money4").click(function() {
+  alert("money");
+});
