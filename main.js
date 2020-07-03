@@ -20,21 +20,22 @@ let moneyThree = Math.floor(Math.random() * 12 + 1);
 let moneyFour = Math.floor(Math.random() * 12 + 1);
 
 let points = 0;
+$("#points ").text(points);
 let wins = 0;
 let losses = 0;
 
 $("#money1").click(function() {
-  alert("money");
+console.log("moneyOne", points += moneyOne)
 });
 
 $("#money2").click(function() {
-  alert("money");
+  console.log("moneyTwo", points += moneyTwo)
 });
 
 $("#money3").click(function() {
-  alert("money");
+  console.log("moneyThree", points += moneyThree)
 });
 
 $("#money4").click(function() {
-  alert("money");
+  console.log("moneyFour", points += moneyFour)
 });
