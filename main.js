@@ -6,36 +6,39 @@
 // $(".btn").click(function() {
 //  alert("hi");
 // });
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  let chosenNumber = Math.floor(Math.random() * (max - min)) + min;
-  $("#amount-needed").text(chosenNumber);
+let chosenNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+$("#amount-needed").text(chosenNumber);
+let points = 0;
+$("#points ").text(points);
+if (points > chosenNumber) {
+  console.log("you lost");
+} else {
+  console.log("maybe won");
 }
-getRandomInt(19, 120);
+
 let moneyOne = Math.floor(Math.random() * 12 + 1);
 let moneyTwo = Math.floor(Math.random() * 12 + 1);
 let moneyThree = Math.floor(Math.random() * 12 + 1);
 let moneyFour = Math.floor(Math.random() * 12 + 1);
-
-let points = 0;
-$("#points ").text(points);
 let wins = 0;
 let losses = 0;
 
 $("#money1").click(function() {
-console.log("moneyOne", points += moneyOne)
+  points += moneyOne;
+  $("#points ").text(points);
 });
 
 $("#money2").click(function() {
-  console.log("moneyTwo", points += moneyTwo)
+  points += moneyTwo;
+  $("#points ").text(points);
 });
 
 $("#money3").click(function() {
-  console.log("moneyThree", points += moneyThree)
+  points += moneyThree;
+  $("#points ").text(points);
 });
 
 $("#money4").click(function() {
-  console.log("moneyFour", points += moneyFour)
+  points += moneyFour;
+  $("#points ").text(points);
 });
