@@ -10,35 +10,41 @@ let chosenNumber = Math.floor(Math.random() * (120 - 19)) + 19;
 $("#amount-needed").text(chosenNumber);
 let points = 0;
 $("#points ").text(points);
-if (points > chosenNumber) {
-  console.log("you lost");
-} else {
-  console.log("maybe won");
+function checkPoints() {
+  if (points > chosenNumber) {
+losses++;
+  } else if (points === chosenNumber) {
+wins++;  } else {
+    console.log("still playing");
+  }
 }
-
-let moneyOne = Math.floor(Math.random() * 12 + 1);
-let moneyTwo = Math.floor(Math.random() * 12 + 1);
-let moneyThree = Math.floor(Math.random() * 12 + 1);
-let moneyFour = Math.floor(Math.random() * 12 + 1);
+let moneyOne = Math.floor(Math.random() * 12 + 2);
+let moneyTwo = Math.floor(Math.random() * 12 + 2);
+let moneyThree = Math.floor(Math.random() * 12 + 2);
+let moneyFour = Math.floor(Math.random() * 12 + 2);
 let wins = 0;
 let losses = 0;
 
 $("#money1").click(function() {
   points += moneyOne;
   $("#points ").text(points);
+  checkPoints();
 });
 
 $("#money2").click(function() {
   points += moneyTwo;
   $("#points ").text(points);
+  checkPoints();
 });
 
 $("#money3").click(function() {
   points += moneyThree;
   $("#points ").text(points);
+  checkPoints();
 });
 
 $("#money4").click(function() {
   points += moneyFour;
   $("#points ").text(points);
+  checkPoints();
 });
