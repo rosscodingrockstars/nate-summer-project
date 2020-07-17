@@ -7,18 +7,25 @@ let moneyFour = Math.floor(Math.random() * 12 + 2);
 let points = 0;
 $("#points ").text(points);
 $("#restart").click(function() {
+  $(".money").show();
   points = 0;
   $("#points ").text(points);
   chosenNumber = Math.floor(Math.random() * (120 - 19)) + 19;
   $("#amount-needed").text(chosenNumber);
+  moneyOne = Math.floor(Math.random() * 12 + 2);
+  moneyTwo = Math.floor(Math.random() * 12 + 2);
+  moneyThree = Math.floor(Math.random() * 12 + 2);
+  moneyFour = Math.floor(Math.random() * 12 + 2);
 });
 function checkPoints() {
   if (points > chosenNumber) {
     losses++;
     $("#losses").text(losses);
+    $(".money").hide();
   } else if (points === chosenNumber) {
     wins++;
     $("#wins").text(wins);
+    $(".money").hide();
   }
 }
 let wins = 0;
