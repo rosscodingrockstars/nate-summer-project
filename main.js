@@ -5,8 +5,10 @@ let moneyTwo = Math.floor(Math.random() * 12 + 2);
 let moneyThree = Math.floor(Math.random() * 12 + 2);
 let moneyFour = Math.floor(Math.random() * 12 + 2);
 let points = 0;
+$("#restart").hide();
 $("#points ").text(points);
 $("#restart").click(function() {
+  $("#restart").hide();
   $(".money").show();
   points = 0;
   $("#points ").text(points);
@@ -20,10 +22,12 @@ $("#restart").click(function() {
 function checkPoints() {
   if (points > chosenNumber) {
     losses++;
+    $("#restart").show();
     $("#losses").text(losses);
     $(".money").hide();
   } else if (points === chosenNumber) {
     wins++;
+    $("#restart").show();
     $("#wins").text(wins);
     $(".money").hide();
   }
