@@ -6,3 +6,4 @@ There also needs to be random number generators for each of the currencies betwe
 If I go over the targeted score, the game should instantly end, and a loss should be added to the losses counter.
 If I get the exact targeted score, the game should instantly end, and a win should be added to the wins counter.
 All of the previous numbers should be re-rolled again and have a number fill their spot, so that It's different every time even when not resetting the page.
+ 12 columns always!!
